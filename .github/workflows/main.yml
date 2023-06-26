@@ -1,0 +1,27 @@
+name: site-web CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Html preview
+        id: html_preview
+        uses: pavi2410/html-preview-action@v2
+        with:
+          html_file: 'index.html'
+      
+      - name: Publish HTML Preview
+        uses: actions/upload-artifact@v2
+        with:
+          name: HTML Preview
+          path: ${{ steps.html_preview.outputs.url }}
