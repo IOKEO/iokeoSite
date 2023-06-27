@@ -1,9 +1,32 @@
+<?php
+if(isset($_POST['submit'])){
+    $to = "ada@iokeo.com"; // Adresse e-mail de destination
+    $subject = $_POST['objet']; // Sujet de l'e-mail
+    $name = $_POST['name']; // Nom de l'expéditeur
+    $email = $_POST['email']; // Adresse e-mail de l'expéditeur
+    $message = $_POST['message']; // Message de l'e-mail
+    
+    // Vérification des champs requis
+    if(!empty($name) && !empty($email) && !empty($message)){
+        $headers = "From: $name <$email>" . "\r\n"; // En-têtes de l'e-mail
+        
+        // Envoi de l'e-mail
+        if(mail($to, $subject, $message, $headers)){
+            echo "Message envoyé avec succès";
+        } else{
+            echo "Une erreur s'est produite lors de l'envoi du message";
+        }
+    } else{
+        echo "Veuillez remplir tous les champs du formulaire";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>GrowMark - Digital Marketing HTML Template</title>
+    <title>Iokeo- Transformation digitale</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -56,7 +79,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="about.html">À propos</a>
@@ -64,16 +87,19 @@
                 <li class="nav-item">
                 <a class="nav-link" href="service.html">Services</a>
                 <ul class="dropdown-menu bg-light">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="service.html#section1">ME & MP</a></li>
+                      <li><a class="dropdown-item" href="service.html#section2">Management SI</a></li>
+                      <li><a class="dropdown-item" href="service.html#section3">Assistance à la Maitrise</a></li>
+                      <li><a class="dropdown-item" href="service.html#section4">Ingénerie Web</a></li>
+                      <li><a class="dropdown-item" href="service.html#section5">Microsoft 365</a></li>
+                      <li><a class="dropdown-item" href="service.html#section6">GED-GEC-SAE Opensource</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="reference.html">Références</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link active" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="#">Publications</a>
@@ -104,25 +130,25 @@
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" name="name" required>
                                     <label for="name">Votre Nom</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" name="email" required>
                                     <label for="email">Votre Adresse E-mail</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject" required>
                                     <label for="subject">Objet</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 200px" name="message" required></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
