@@ -1,6 +1,8 @@
 .titreIokeo {
     font-size: 35px !important;
     padding-bottom: 20px;
+    color: #0093b6;
+    font-weight: 700;
 }
 
 .gradient-text {
@@ -23,6 +25,7 @@ font-size: 20px;
 font-weight: 900;
 }
 
+<<<<<<< HEAD
 .banner-bg-1{
 	background-image: url(uploads/service.jpg);
 	padding: 150px 0;	
@@ -45,3 +48,32 @@ font-weight: 900;
 	width: 100%;
 	z-index: -1;
 	}
+=======
+.carouselIokeo {
+    width: 100%;
+    overflow: hidden;  }
+  
+.carousel-innerIokeo {
+    display: flex;
+    animation: carousel-scroll 10s linear infinite;
+}
+  
+.carousel-itemIokeo {
+    flex: 0 0 20%; /* Ajustez la largeur des logos selon vos besoins */
+    padding: 0 10px; /* Espacement entre les logos */
+}
+  
+@keyframes carousel-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+.carousel-itemIokeo img {
+    width: 100px; /* Remplacez la valeur par la largeur souhaitée */
+    height: 100px; /* Remplacez la valeur par la hauteur souhaitée */
+  }
+>>>>>>> 621e0da6b3f13aaa214ec2c439bb69d2b88c9ada
