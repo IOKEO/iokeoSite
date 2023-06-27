@@ -32,6 +32,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/stylesIokeo.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,292 +44,219 @@
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-primary text-white d-none d-lg-flex">
-        <div class="container py-3">
-            <div class="d-flex align-items-center">
-                <a href="index.html">
-                    <h2 class="text-white fw-bold m-0">GrowMark</h2>
-                </a>
-                <div class="ms-auto d-flex align-items-center">
-                    <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</small>
-                    <small class="ms-4"><i class="fa fa-envelope me-3"></i>info@example.com</small>
-                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</small>
-                    <div class="ms-3 d-flex">
-                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+    
+            <a class="navbar-brand" href="index.html">
+            <img src="img/logom.png" alt="Logo" width="150px">
+            </a>
+            
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+    
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="about.html">À propos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="service.html">Services</a>
+                <ul class="dropdown-menu bg-light">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="reference.html">Références</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Publications</a>
+                </li>
+            </ul>
             </div>
         </div>
-    </div>
-    <!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
-    <div class="container-fluid bg-white sticky-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
-                <a href="index.html" class="navbar-brand d-lg-none">
-                    <h1 class="fw-bold m-0">GrowMark</h1>
-                </a>
-                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link active">Services</a>
-                        <a href="project.html" class="nav-item nav-link">Projects</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                <a href="feature.html" class="dropdown-item">Features</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="quote.html" class="dropdown-item">Quotation</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <div class="ms-auto d-none d-lg-block">
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-3">Get A Quote</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
+        </nav>
     <!-- Navbar End -->
 
+    <div class="banner-area banner-bg-1 ">
+		<div class="container">
+			<div class="row ps-5">
+				<div class="col-md-12">
+					<div class="banner">
+						<h2>Nos Services</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center py-5">
-            <h1 class="display-2 text-white mb-4 animated slideInDown">Services</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-primary" aria-current="page">Services</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-    <!-- Page Header End -->
 
 
     <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium text-primary">Our Services</p>
-                <h1 class="display-5 mb-5">Digital Marketing Services that We Offer</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
-                                style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
-                            </div>
-                            <h5 class="mb-3">Digital Marketing</h4>
-                                <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                    stet</p>
-                        </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i
-                                    class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
-                                style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon">
-                            </div>
-                            <h5 class="mb-3">Internet Marketing</h4>
-                                <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                    stet</p>
-                        </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i
-                                    class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
-                                style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-7.png" alt="Icon">
-                            </div>
-                            <h5 class="mb-3">Content Marketing</h4>
-                                <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                    stet</p>
-                        </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i
-                                    class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
-                                style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-8.png" alt="Icon">
-                            </div>
-                            <h5 class="mb-3">Social Marketing</h4>
-                                <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                    stet</p>
-                        </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i
-                                    class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
-                                style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-9.png" alt="Icon">
-                            </div>
-                            <h5 class="mb-3">B2B Marketing</h4>
-                                <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                    stet</p>
-                        </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i
-                                    class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
-                                style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-10.png" alt="Icon">
-                            </div>
-                            <h5 class="mb-3">E-mail Marketing</h4>
-                                <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                    stet</p>
-                        </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i
-                                    class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+   
+    <div class="container ">
+        <div class="row p-5">
+        <div class="mt-150 mb-150  ">
+            <div class="col-md">
+                <div class="post-media wow fadeIn ">
+                   <!-- <img src="img/service1.PNG" alt="image" width="600px" height="300px" border-radus="2">
+                   --> <p class="blog-meta">
+                       
+                    </p>
+                    <h2 class="titreIokeo">Modèles Economiques & Management de la Performance</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint soluta, similique quidem fuga vel voluptates amet doloremque corrupti. Perferendis totam voluptates eius error fuga cupiditate dolorum? Adipisci mollitia quod labore aut natus nobis. Rerum perferendis, nobis hic adipisci vel inventore facilis rem illo, tenetur ipsa voluptate dolorem, cupiditate temporibus laudantium quidem recusandae expedita dicta cum eum. Quae laborum repellat a ut, voluptatum ipsa eum. Culpa fugiat minus laborum quia nam!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, praesentium, dicta. Dolorum inventore molestias velit possimus, dolore labore aliquam aperiam architecto quo reprehenderit excepturi ipsum ipsam accusantium nobis ducimus laudantium.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est aperiam voluptatum id cupiditate quae corporis ex. Molestias modi mollitia neque magni voluptatum, omnis repudiandae aliquam quae veniam error! Eligendi distinctio, ab eius iure atque ducimus id deleniti, vel alias sint similique perspiciatis saepe necessitatibus non eveniet, quo nisi soluta.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt beatae nemo quaerat, doloribus obcaecati odio!</p>
+                    <span class="date"><i class="fas fa-calendar"></i> Mis a jour le 27 juin, 2023</span>
+                </div>   
+                </div>                
+            </div> 
+        </div> 
+    </div> 
+        <div class="container ">
+            <div class="row p-5">
+            <div class="mt-150 mb-150  ">
+                <div class="col-md">
+                    <div class="post-media wow fadeIn ">
+                       <!-- <img src="img/service1.PNG" alt="image" width="600px" height="300px" border-radus="2">
+                       --> <p class="blog-meta">
+                           
+                        </p>
+                        <h2>Management des Systèmes d'Informations</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint soluta, similique quidem fuga vel voluptates amet doloremque corrupti. Perferendis totam voluptates eius error fuga cupiditate dolorum? Adipisci mollitia quod labore aut natus nobis. Rerum perferendis, nobis hic adipisci vel inventore facilis rem illo, tenetur ipsa voluptate dolorem, cupiditate temporibus laudantium quidem recusandae expedita dicta cum eum. Quae laborum repellat a ut, voluptatum ipsa eum. Culpa fugiat minus laborum quia nam!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, praesentium, dicta. Dolorum inventore molestias velit possimus, dolore labore aliquam aperiam architecto quo reprehenderit excepturi ipsum ipsam accusantium nobis ducimus laudantium.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est aperiam voluptatum id cupiditate quae corporis ex. Molestias modi mollitia neque magni voluptatum, omnis repudiandae aliquam quae veniam error! Eligendi distinctio, ab eius iure atque ducimus id deleniti, vel alias sint similique perspiciatis saepe necessitatibus non eveniet, quo nisi soluta.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt beatae nemo quaerat, doloribus obcaecati odio!</p>
+                        <span class="date"><i class="fas fa-calendar"></i> Mis a jour le 27 juin, 2023</span>
+                    </div>   
+                    </div>                
+                </div> 
+            </div> 
+        </div> 
+        <div class="container ">
+            <div class="row p-5">
+            <div class="mt-150 mb-150  ">
+                <div class="col-md">
+                    <div class="post-media wow fadeIn ">
+                       <!-- <img src="img/service1.PNG" alt="image" width="600px" height="300px" border-radus="2">
+                       --> <p class="blog-meta">
+                           
+                        </p>
+                        <h2>Assistance à la Maitrise d'ouvrage</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint soluta, similique quidem fuga vel voluptates amet doloremque corrupti. Perferendis totam voluptates eius error fuga cupiditate dolorum? Adipisci mollitia quod labore aut natus nobis. Rerum perferendis, nobis hic adipisci vel inventore facilis rem illo, tenetur ipsa voluptate dolorem, cupiditate temporibus laudantium quidem recusandae expedita dicta cum eum. Quae laborum repellat a ut, voluptatum ipsa eum. Culpa fugiat minus laborum quia nam!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, praesentium, dicta. Dolorum inventore molestias velit possimus, dolore labore aliquam aperiam architecto quo reprehenderit excepturi ipsum ipsam accusantium nobis ducimus laudantium.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est aperiam voluptatum id cupiditate quae corporis ex. Molestias modi mollitia neque magni voluptatum, omnis repudiandae aliquam quae veniam error! Eligendi distinctio, ab eius iure atque ducimus id deleniti, vel alias sint similique perspiciatis saepe necessitatibus non eveniet, quo nisi soluta.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt beatae nemo quaerat, doloribus obcaecati odio!</p>
+                        <span class="date"><i class="fas fa-calendar"></i> Mis a jour le 27 juin, 2023</span>
+                    </div>   
+                    </div>                
+                </div> 
+            </div> 
+        </div> 
+        <div class="container ">
+            <div class="row p-5">
+            <div class="mt-150 mb-150  ">
+                <div class="col-md">
+                    <div class="post-media wow fadeIn ">
+                       <!-- <img src="img/service1.PNG" alt="image" width="600px" height="300px" border-radus="2">
+                       --> <p class="blog-meta">
+                           
+                        </p>
+                        <h2>Ingenierie du Web</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint soluta, similique quidem fuga vel voluptates amet doloremque corrupti. Perferendis totam voluptates eius error fuga cupiditate dolorum? Adipisci mollitia quod labore aut natus nobis. Rerum perferendis, nobis hic adipisci vel inventore facilis rem illo, tenetur ipsa voluptate dolorem, cupiditate temporibus laudantium quidem recusandae expedita dicta cum eum. Quae laborum repellat a ut, voluptatum ipsa eum. Culpa fugiat minus laborum quia nam!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, praesentium, dicta. Dolorum inventore molestias velit possimus, dolore labore aliquam aperiam architecto quo reprehenderit excepturi ipsum ipsam accusantium nobis ducimus laudantium.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est aperiam voluptatum id cupiditate quae corporis ex. Molestias modi mollitia neque magni voluptatum, omnis repudiandae aliquam quae veniam error! Eligendi distinctio, ab eius iure atque ducimus id deleniti, vel alias sint similique perspiciatis saepe necessitatibus non eveniet, quo nisi soluta.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt beatae nemo quaerat, doloribus obcaecati odio!</p>
+                        <span class="date"><i class="fas fa-calendar"></i> Mis a jour le 27 juin, 2023</span>
+                    </div>   
+                    </div>                
+                </div> 
+            </div> 
+        </div> 
+        <div class="container ">
+            <div class="row p-5">
+            <div class="mt-150 mb-150  ">
+                <div class="col-md">
+                    <div class="post-media wow fadeIn ">
+                       <!-- <img src="img/service1.PNG" alt="image" width="600px" height="300px" border-radus="2">
+                       --> <p class="blog-meta">
+                           
+                        </p>
+                        <h2>MicroSoft 365</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint soluta, similique quidem fuga vel voluptates amet doloremque corrupti. Perferendis totam voluptates eius error fuga cupiditate dolorum? Adipisci mollitia quod labore aut natus nobis. Rerum perferendis, nobis hic adipisci vel inventore facilis rem illo, tenetur ipsa voluptate dolorem, cupiditate temporibus laudantium quidem recusandae expedita dicta cum eum. Quae laborum repellat a ut, voluptatum ipsa eum. Culpa fugiat minus laborum quia nam!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, praesentium, dicta. Dolorum inventore molestias velit possimus, dolore labore aliquam aperiam architecto quo reprehenderit excepturi ipsum ipsam accusantium nobis ducimus laudantium.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est aperiam voluptatum id cupiditate quae corporis ex. Molestias modi mollitia neque magni voluptatum, omnis repudiandae aliquam quae veniam error! Eligendi distinctio, ab eius iure atque ducimus id deleniti, vel alias sint similique perspiciatis saepe necessitatibus non eveniet, quo nisi soluta.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt beatae nemo quaerat, doloribus obcaecati odio!</p>
+                        <span class="date"><i class="fas fa-calendar"></i> Mis a jour le 27 juin, 2023</span>
+                    </div>   
+                    </div>                
+                </div> 
+            </div> 
+        </div> 
+        <div class="container ">
+            <div class="row p-5">
+            <div class="mt-150 mb-150  ">
+                <div class="col-md">
+                    <div class="post-media wow fadeIn ">
+                       <!-- <img src="img/service1.PNG" alt="image" width="600px" height="300px" border-radus="2">
+                       --> <p class="blog-meta">
+                           
+                        </p>
+                        <h2>GED-GEC-SAE Opensource</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint soluta, similique quidem fuga vel voluptates amet doloremque corrupti. Perferendis totam voluptates eius error fuga cupiditate dolorum? Adipisci mollitia quod labore aut natus nobis. Rerum perferendis, nobis hic adipisci vel inventore facilis rem illo, tenetur ipsa voluptate dolorem, cupiditate temporibus laudantium quidem recusandae expedita dicta cum eum. Quae laborum repellat a ut, voluptatum ipsa eum. Culpa fugiat minus laborum quia nam!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, praesentium, dicta. Dolorum inventore molestias velit possimus, dolore labore aliquam aperiam architecto quo reprehenderit excepturi ipsum ipsam accusantium nobis ducimus laudantium.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est aperiam voluptatum id cupiditate quae corporis ex. Molestias modi mollitia neque magni voluptatum, omnis repudiandae aliquam quae veniam error! Eligendi distinctio, ab eius iure atque ducimus id deleniti, vel alias sint similique perspiciatis saepe necessitatibus non eveniet, quo nisi soluta.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt beatae nemo quaerat, doloribus obcaecati odio!</p>
+                        <span class="date"><i class="fas fa-calendar"></i> Mis a jour le 27 juin, 2023</span>
+                    </div>   
+                    </div>                
+                </div> 
+            </div> 
+        </div> 
+        
+    
     <!-- Service End -->
 
 
-    <!-- Testimonial Start -->
-    <div class="container-xxl pt-5">
-        <div class="container">
-            <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
-                style="max-width: 500px;">
-                <p class="fs-5 fw-medium text-primary">Testimonial</p>
-                <h1 class="display-5 mb-5">What Clients Say About Our Services!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-                    <img class="mb-4" src="img/testimonial-1.jpg" alt="">
-                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
-                        sit, sed stet lorem sit clita duo justo</p>
-                    <h5>Client Name</h5>
-                    <span class="text-primary">Profession</span>
-                </div>
-                <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-                    <img class="mb-4" src="img/testimonial-2.jpg" alt="">
-                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
-                        sit, sed stet lorem sit clita duo justo</p>
-                    <h5>Client Name</h5>
-                    <span class="text-primary">Profession</span>
-                </div>
-                <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-                    <img class="mb-4" src="img/testimonial-3.jpg" alt="">
-                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
-                        sit, sed stet lorem sit clita duo justo</p>
-                    <h5>Client Name</h5>
-                    <span class="text-primary">Profession</span>
-                </div>
-                <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-                    <img class="mb-4" src="img/testimonial-4.jpg" alt="">
-                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
-                        sit, sed stet lorem sit clita duo justo</p>
-                    <h5>Client Name</h5>
-                    <span class="text-primary">Profession</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
+    
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid bg-dark footer mt-1 py-1 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-3">
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-white mb-4"><img src="img/logo.png" alt="Logo" width="200px" height="100px" /></h4>
+               
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="text-white mb-4">Liens rapides</h4>
+                    <a class="btn btn-link" href="index.html">Acceuil</a>
+                    <a class="btn btn-link" href="about.html">A propos</a>
+                    <a class="btn btn-link" href="index.html">Nos services</a>
+                    <a class="btn btn-link" href="reference.html">Références</a>
+                    <a class="btn btn-link" href="publications.html">Publications</a>
+                    
+           
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Business Hours</h4>
-                    <p class="mb-1">Monday - Friday</p>
-                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    <p class="mb-1">Saturday</p>
-                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                    <p class="mb-1">Sunday</p>
-                    <h6 class="text-light">Closed</h6>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Your email">
-                        <button type="button"
-                            class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="text-white mb-4">Contacts</h4>
+                    <p>18, rue 9006 Houénoussou-Sainte-Rita </p></br>
+                    <p> (+229) 62 41 97 10</p></br>
+                    <p>contact@iokeo.com</p>
                 </div>
             </div>
         </div>
@@ -341,12 +269,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="fw-medium text-light" href="#">Your Site Name</a>, All Right Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="fw-medium text-light" href="https://htmlcodex.com">HTML Codex</a>
-                    Distributed By <a class="fw-medium text-light" href="https://themewagon.com">ThemeWagon</a>
+                    &copy; <a class="fw-medium text-light" href="#">2023 iokeo.</a>, All Right Reserved.
                 </div>
             </div>
         </div>
@@ -369,6 +292,7 @@
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->
+    
     <script src="js/main.js"></script>
 </body>
 
