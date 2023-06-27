@@ -13,6 +13,28 @@
     bottom: 30px;
     z-index: 99;
 }
+.banner-bg-1{
+	background: url(uploads/service.jpg);
+	padding: 150px 0;	
+	background-clip: initial;
+	background-origin: initial;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 0;
+}
+
+.banner-bg-1::before{
+	content: "";
+	display: inline-block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+	}
 
 .fw-medium {
     font-weight: 500;
