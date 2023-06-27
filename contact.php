@@ -1,3 +1,26 @@
+<?php
+if(isset($_POST['submit'])){
+    $to = "ada@iokeo.com"; // Adresse e-mail de destination
+    $subject = $_POST['objet']; // Sujet de l'e-mail
+    $name = $_POST['name']; // Nom de l'expéditeur
+    $email = $_POST['email']; // Adresse e-mail de l'expéditeur
+    $message = $_POST['message']; // Message de l'e-mail
+    
+    // Vérification des champs requis
+    if(!empty($name) && !empty($email) && !empty($message)){
+        $headers = "From: $name <$email>" . "\r\n"; // En-têtes de l'e-mail
+        
+        // Envoi de l'e-mail
+        if(mail($to, $subject, $message, $headers)){
+            echo "Message envoyé avec succès";
+        } else{
+            echo "Une erreur s'est produite lors de l'envoi du message";
+        }
+    } else{
+        echo "Veuillez remplir tous les champs du formulaire";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -107,25 +130,25 @@
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" name="name" required>
                                     <label for="name">Votre Nom</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" name="email" required>
                                     <label for="email">Votre Adresse E-mail</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject" required>
                                     <label for="subject">Objet</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 200px" name="message" required></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
