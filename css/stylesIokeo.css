@@ -25,7 +25,6 @@ font-size: 20px;
 font-weight: 900;
 }
 
-<<<<<<< HEAD
 .banner-bg-1{
 	background-image: url(uploads/service.jpg);
 	padding: 150px 0;	
@@ -48,7 +47,6 @@ font-weight: 900;
 	width: 100%;
 	z-index: -1;
 	}
-=======
 .carouselIokeo {
     width: 100%;
     overflow: hidden;  }
@@ -76,4 +74,3 @@ font-weight: 900;
     width: 100px; /* Remplacez la valeur par la largeur souhaitée */
     height: 100px; /* Remplacez la valeur par la hauteur souhaitée */
   }
->>>>>>> 621e0da6b3f13aaa214ec2c439bb69d2b88c9ada
